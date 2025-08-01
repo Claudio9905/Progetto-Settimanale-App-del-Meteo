@@ -1,42 +1,55 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  background-image: linear-gradient(340deg, #45c6ec, transparent);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header .nav-meteo {
+  box-shadow: 0px 0px 10px 1px black;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header #link-logo {
+  width: 5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+main .location {
+  border-radius: 30px;
+  background-image: linear-gradient(10deg, #3399f5, transparent);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.536);
 }
 
-.card {
-  padding: 2em;
+main #name-location {
+  background-image: linear-gradient(279deg, #00000033, #ebebeb00);
+  width: max-content;
+  padding: 1em;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
-.read-the-docs {
-  color: #888;
+main .box-meteo {
+  background-image: linear-gradient(302deg, #0000004f, transparent);
+  width: max-content;
+  border-radius: 20px;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.399);
+}
+
+main .title-meteo {
+  border-bottom: 2px solid #2065a2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0.5em;
+}
+
+main #meteo-search {
+  border-bottom: 2px solid #184358;
+  padding: 1em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-image: linear-gradient(0deg, #4b7591, transparent);
+  border-right: 2px solid #184358;
+  border-top-right-radius: 20px;
+  border-left: 2px solid #184358;
+  border-top-left-radius: 20px;
+  box-shadow: 0px 5px 5px 1px #00000053;
 }

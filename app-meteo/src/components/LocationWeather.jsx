@@ -1,0 +1,95 @@
+import Col from "react-bootstrap/esm/Col";
+import { useEffect, useState } from "react";
+
+const LocationWeather = (props) => {
+  const [locationCountry, setLocationCountry] = useState({
+    coord: {},
+    weather: [],
+    base: "stations",
+    main: {},
+    visibility: 0,
+    wind: {},
+    clouds: {},
+    dt: 0,
+    sys: {},
+    timezone: 0,
+    id: 0,
+    name: "",
+    cod: 0,
+  });
+
+  const getWeather = () => {
+    fetch(props.endpoint)
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Errore nel recupero dei dati");
+        }
+      })
+      .then((resData) => {
+        console.log(resData);
+        setLocationCountry(resData);
+      })
+      .catch((err) => {
+        console.log("Error:", err);
+      });
+  };
+
+  useEffect(() => {
+    getWeather();
+  }, [props.endpoint]);
+
+  return (
+    <>
+      <Col xs="12" md="12" lg="12" className="location p-2">
+        {/* Rappresentazione delle location:
+      1)immagine della location;
+      2)titolo con il luogo della location;
+      3)descrizione della location con i dati del meteo */}
+        <section className=" me-2">
+          <div id="name-location">
+            <h4 className=" fs-1">{locationCountry.name}</h4>
+          </div>
+        </section>
+        <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+          <div className="box-meteo text-center me-3">
+            <h4 className="title-meteo">Coordinate:</h4>
+            <p className="fs-5">
+              lon: {locationCountry.coord.lon}
+              <br />
+              lat: {locationCountry.coord.lat}
+            </p>
+          </div>
+          <div className="box-meteo text-center">
+            <h4 className="title-meteo">Temperature:</h4>
+            <p className="fs-5">temp: {locationCountry.main.temp} °C</p>
+            <p className="fs-5">
+              tempMin: {locationCountry.main.temp_min} °C
+              <br />
+              tempMax: {locationCountry.main.temp_max} °C
+            </p>
+          </div>
+          <div className="box-meteo text-center">
+            <h4 className="title-meteo">Humidity: </h4>
+            <p className="fs-3">{locationCountry.main.humidity} %</p>
+          </div>
+          <div className="box-meteo text-center">
+            <h4 className="title-meteo">Condizioni Meteo:</h4>
+            <p className="fs-5">
+              description:
+              <br />
+              <p className="fs-6">
+                {locationCountry.weather.map((desc) => {
+                  return desc.description;
+                })}
+              </p>
+            </p>
+          </div>
+        </div>
+      </Col>
+    </>
+  );
+};
+
+export default LocationWeather;
