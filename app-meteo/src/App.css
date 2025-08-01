@@ -53,3 +53,17 @@ main #meteo-search {
   border-top-left-radius: 20px;
   box-shadow: 0px 5px 5px 1px #00000053;
 }
+
+main .button-prevs {
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+.button-prevs:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 1px black;
+  transition: all 0.2s linear 0s;
+}

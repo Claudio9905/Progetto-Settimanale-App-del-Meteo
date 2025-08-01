@@ -44,7 +44,7 @@ const LocationWeather = (props) => {
 
   return (
     <>
-      <Col xs="12" md="12" lg="12" className="location p-2">
+      <Col xs="12" md="12" lg="12" className="location p-2 text-center">
         {/* Rappresentazione delle location:
       1)immagine della location;
       2)titolo con il luogo della location;
@@ -85,16 +85,16 @@ const LocationWeather = (props) => {
               })}
             </p>
           </div>
-
-          <button
-            onClick={() => {
-              navigate(`/previsioni/` + locationCountry.name);
-            }}
-          >
-            Mostra <br />
-            Previsioni
-          </button>
         </div>
+        <button
+          onClick={() => {
+            navigate(`/previsioni/` + locationCountry.name);
+          }}
+          className="button-prevs"
+        >
+          Mostra <br />
+          Previsioni
+        </button>
       </Col>
     </>
   );
