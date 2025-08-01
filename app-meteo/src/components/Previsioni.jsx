@@ -28,7 +28,7 @@ const Previsioni = () => {
   };
 
   useEffect(() => {
-    getDetailsLocation;
+    getDetailsLocation();
   }, []);
 
   return <></>;

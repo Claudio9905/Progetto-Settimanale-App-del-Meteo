@@ -3,8 +3,26 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+header .page {
+  background-color: rgba(77, 111, 151, 0.64);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.403);
+  padding: 0.2em;
+  border-radius: 10px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+header .target-page {
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.403);
+  transform: scale(1.2);
+  transition: all 0.3s linear 0s;
+}
+
 header .nav-meteo {
   box-shadow: 0px 0px 10px 1px black;
+  background-image: linear-gradient(45deg, #eca265, #2b9488);
 }
 
 header #link-logo {
@@ -59,6 +77,8 @@ main .button-prevs {
   border-radius: 10px;
   font-size: 1.5em;
   margin-top: 2em;
+  background-image: linear-gradient(2deg, #0000003b, #48a1c9);
+  box-shadow: 0px 0px 5px 1px #00000052;
 }
 
 .button-prevs:hover {

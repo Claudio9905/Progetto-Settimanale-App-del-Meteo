@@ -13,7 +13,7 @@ const NavbarUser = (props) => {
     <>
       {/* creo la mia barra di navigazione dove l'utente può navigare attraverso le pagine */}
 
-      <Navbar expand="lg" className=" nav-meteo bg-dark" data-bs-theme="dark">
+      <Navbar expand="lg" className=" nav-meteo " data-bs-theme="dark">
         <Container>
           <Link to="/" id="link-logo" className="me-2">
             <img
@@ -28,8 +28,8 @@ const NavbarUser = (props) => {
               <Link
                 className={
                   location.pathname === `/`
-                    ? `nav-item text-light me-2 text-decoration-none tag-page active`
-                    : `nav-item text-light me-2 text-decoration-none tag-page`
+                    ? `nav-item text-light me-2 text-decoration-none tag-page page target-page`
+                    : `nav-item text-light me-2 text-decoration-none tag-page page`
                 }
                 to="/"
               >
@@ -38,8 +38,8 @@ const NavbarUser = (props) => {
               <Link
                 className={
                   location.pathname === `/previsioni`
-                    ? `nav-item text-light me-2 text-decoration-none tag-page active`
-                    : `nav-item text-light me-2 text-decoration-none tag-page`
+                    ? `nav-item text-light me-2 text-decoration-none tag-page page target-page`
+                    : `nav-item text-light me-2 text-decoration-none tag-page page`
                 }
                 to="/previsioni"
               >
@@ -48,8 +48,8 @@ const NavbarUser = (props) => {
               <Link
                 className={
                   location.pathname === `/aboutus`
-                    ? `nav-item text-light me-2 text-decoration-none tag-page active`
-                    : `nav-item text-light me-2 text-decoration-none tag-page`
+                    ? `nav-item text-light me-2 text-decoration-none tag-page page target-page`
+                    : `nav-item text-light me-2 text-decoration-none tag-page page`
                 }
                 to="/aboutus"
               >
