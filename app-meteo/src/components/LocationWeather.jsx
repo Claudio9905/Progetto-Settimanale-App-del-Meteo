@@ -78,8 +78,8 @@ const LocationWeather = (props) => {
           </div>
           <div className="box-meteo text-center">
             <h4 className="title-meteo">Condizioni Meteo:</h4>
-            <p className="fs-5">description:</p>
-            <p className="fs-6">
+            <p className="fs-5">
+              description:
               {locationCountry.weather.map((desc) => {
                 return desc.description;
               })}
