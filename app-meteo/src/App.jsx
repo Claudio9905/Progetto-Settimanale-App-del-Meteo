@@ -33,7 +33,7 @@ function App() {
             }
           />
           <Route
-            path="/previsioni"
+            path="/previsioni/:nameLocation"
             element={
               <main className="mt-3">
                 <Previsioni />

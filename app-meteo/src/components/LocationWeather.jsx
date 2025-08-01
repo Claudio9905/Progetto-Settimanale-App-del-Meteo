@@ -1,5 +1,6 @@
 import Col from "react-bootstrap/esm/Col";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const LocationWeather = (props) => {
   const [locationCountry, setLocationCountry] = useState({
@@ -17,6 +18,7 @@ const LocationWeather = (props) => {
     name: "",
     cod: 0,
   });
+  const navigate = useNavigate();
 
   const getWeather = () => {
     fetch(props.endpoint)
@@ -76,16 +78,22 @@ const LocationWeather = (props) => {
           </div>
           <div className="box-meteo text-center">
             <h4 className="title-meteo">Condizioni Meteo:</h4>
-            <p className="fs-5">
-              description:
-              <br />
-              <p className="fs-6">
-                {locationCountry.weather.map((desc) => {
-                  return desc.description;
-                })}
-              </p>
+            <p className="fs-5">description:</p>
+            <p className="fs-6">
+              {locationCountry.weather.map((desc) => {
+                return desc.description;
+              })}
             </p>
           </div>
+
+          <button
+            onClick={() => {
+              navigate(`/previsioni/` + locationCountry.name);
+            }}
+          >
+            Mostra <br />
+            Previsioni
+          </button>
         </div>
       </Col>
     </>
