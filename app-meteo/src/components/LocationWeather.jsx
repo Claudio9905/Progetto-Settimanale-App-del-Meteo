@@ -49,12 +49,14 @@ const LocationWeather = (props) => {
       1)immagine della location;
       2)titolo con il luogo della location;
       3)descrizione della location con i dati del meteo */}
-        <section className=" me-2">
+        <section className="d-flex justify-content-between me-2">
           <div id="name-location">
             <h4 className=" fs-2 " id="title-country">
               {locationCountry.name}
             </h4>
           </div>
+
+          <h4 id="box-weather">Now</h4>
         </section>
         <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center">
           <div className="box-meteo text-center me-3">

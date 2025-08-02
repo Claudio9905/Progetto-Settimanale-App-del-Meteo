@@ -59,6 +59,21 @@ header #link-logo {
   width: 5em;
 }
 
+main #box-weather {
+  height: max-content;
+  padding: 0.2em;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background-image: linear-gradient(89deg, #f67604, #f67604a6);
+  font-size: 1.5em;
+  position: relative;
+  top: 1em;
+  color: #472607;
+  left: 16px;
+  box-shadow: -2px 0px 3px 0px black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 main .location {
   border-radius: 30px;
   background-image: linear-gradient(10deg, #3399f5, transparent);
