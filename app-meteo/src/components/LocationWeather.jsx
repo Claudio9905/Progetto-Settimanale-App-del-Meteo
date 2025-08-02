@@ -51,7 +51,9 @@ const LocationWeather = (props) => {
       3)descrizione della location con i dati del meteo */}
         <section className=" me-2">
           <div id="name-location">
-            <h4 className=" fs-1">{locationCountry.name}</h4>
+            <h4 className=" fs-2 " id="title-country">
+              {locationCountry.name}
+            </h4>
           </div>
         </section>
         <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center">
@@ -79,7 +81,6 @@ const LocationWeather = (props) => {
           <div className="box-meteo text-center">
             <h4 className="title-meteo">Condizioni Meteo:</h4>
             <p className="fs-5">
-              description:
               {locationCountry.weather.map((desc) => {
                 return desc.description;
               })}

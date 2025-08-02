@@ -4,12 +4,42 @@ body {
 }
 
 header .page {
-  background-color: rgba(77, 111, 151, 0.64);
+  background-color: rgb(246 118 4);
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.403);
   padding: 0.2em;
   border-radius: 10px;
   margin-left: 1em;
   margin-right: 1em;
+}
+
+header .page:hover {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.403);
+  transform: scale(1.2);
+  transition: all 0.3s linear 0s;
+}
+
+header #navBar-control {
+  border: none;
+}
+
+header #navBar-control:focus {
+  box-shadow: none;
+}
+
+header #list-icon {
+  padding: 0.2em;
+  color: #4d2a0d;
+}
+
+#list-icon:hover {
+  border: none;
+  background-image: linear-gradient(5deg, #2b7dd5, transparent);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.563);
+  transition: all 0.2s linear 0s;
 }
 
 header .target-page {
@@ -22,7 +52,7 @@ header .target-page {
 
 header .nav-meteo {
   box-shadow: 0px 0px 10px 1px black;
-  background-image: linear-gradient(45deg, #eca265, #2b9488);
+  background-image: linear-gradient(45deg, #2f88da, #2b948803);
 }
 
 header #link-logo {
@@ -36,7 +66,7 @@ main .location {
 }
 
 main #name-location {
-  background-image: linear-gradient(279deg, #00000033, #ebebeb00);
+  background-image: linear-gradient(279deg, #0038ff61, #ebebeb00);
   width: max-content;
   padding: 1em;
   border-top-right-radius: 30px;
@@ -44,7 +74,7 @@ main #name-location {
 }
 
 main .box-meteo {
-  background-image: linear-gradient(302deg, #0000004f, transparent);
+  background-image: linear-gradient(118deg, #fbfdff, #f8fbfa7a);
   width: max-content;
   border-radius: 20px;
   padding: 1em;
@@ -77,7 +107,7 @@ main .button-prevs {
   border-radius: 10px;
   font-size: 1.5em;
   margin-top: 2em;
-  background-image: linear-gradient(2deg, #0000003b, #48a1c9);
+  background-image: linear-gradient(360deg, #fac002cf, #ffffff00);
   box-shadow: 0px 0px 5px 1px #00000052;
 }
 
@@ -86,4 +116,13 @@ main .button-prevs {
   transform: scale(1.1);
   box-shadow: 0px 0px 5px 1px black;
   transition: all 0.2s linear 0s;
+}
+
+main #title-country {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ff8f2d;
+  -webkit-text-stroke: 1px #58483a;
+  font-family: "Comic Relief", system-ui;
+  text-shadow: 2px 2px 1px black;
 }
