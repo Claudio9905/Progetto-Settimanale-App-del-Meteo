@@ -93,8 +93,7 @@ const LocationWeather = (props) => {
           }}
           className="button-prevs"
         >
-          Mostra <br />
-          Previsioni
+          Mostra Previsioni
         </button>
       </Col>
     </>
