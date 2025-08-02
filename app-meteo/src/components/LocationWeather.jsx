@@ -55,26 +55,27 @@ const LocationWeather = (props) => {
               {locationCountry.name}
             </h4>
           </div>
-
           <h4 id="box-weather">Now</h4>
         </section>
         <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center">
           <div className="box-meteo text-center me-3">
             <h4 className="title-meteo">Coordinate:</h4>
             <p className="fs-5">
-              lon: {locationCountry.coord.lon}
+              Lon: {locationCountry.coord.lon}
               <br />
-              lat: {locationCountry.coord.lat}
+              Lat: {locationCountry.coord.lat}
             </p>
           </div>
           <div className="box-meteo text-center">
             <h4 className="title-meteo">Temperature:</h4>
-            <p className="fs-5">temp: {locationCountry.main.temp} °C</p>
-            <p className="fs-5">
-              tempMin: {locationCountry.main.temp_min} °C
-              <br />
-              tempMax: {locationCountry.main.temp_max} °C
-            </p>
+            <p className="fs-5 mt-3 ">Temp: {locationCountry.main.temp} °C</p>
+            <div className="fs-5 border-top border-1 border-dark">
+              <p className="mt-3">
+                Min: {locationCountry.main.temp_min} °C
+                <br />
+                Max: {locationCountry.main.temp_max} °C
+              </p>
+            </div>
           </div>
           <div className="box-meteo text-center">
             <h4 className="title-meteo">Humidity: </h4>
