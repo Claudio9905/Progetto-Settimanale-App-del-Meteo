@@ -55,7 +55,7 @@ const NavbarUser = (props) => {
               <Form.Group>
                 <Form.Control
                   type="search"
-                  placeholder="Insiresci la città"
+                  placeholder="Inserisci la città"
                   value={props.location}
                   onChange={(e) => props.search(e.target.value)}
                 />
