@@ -4,16 +4,16 @@ import LocationWeather from "./LocationWeather";
 
 const Home = (props) => {
   const endpoint1 =
-    "https://api.openweathermap.org/data/2.5/weather?q=naples,it&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric";
+    "https://api.openweathermap.org/data/2.5/weather?q=naples&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric";
   const endpoint2 =
-    "https://api.openweathermap.org/data/2.5/weather?q=florence,it&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric";
+    "https://api.openweathermap.org/data/2.5/weather?q=florence&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric";
   const endpoint3 =
-    "https://api.openweathermap.org/data/2.5/weather?q=london,gb&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric";
+    "https://api.openweathermap.org/data/2.5/weather?q=london&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric";
   const endpoint4 =
-    "https://api.openweathermap.org/data/2.5/weather?q=bari,it&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric";
+    "https://api.openweathermap.org/data/2.5/weather?q=bari&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric";
   const endpoint5 =
     "https://api.openweathermap.org/data/2.5/weather?q=tokio,jp&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric";
-  const endpointSearch = `https://api.openweathermap.org/data/2.5/weather?q=${props.location},it&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric`;
+  const endpointSearch = `https://api.openweathermap.org/data/2.5/weather?q=${props.location}&appid=9c5ae8aaf755d64a7466ffbbd290cc11&units=metric`;
 
   return (
     <>

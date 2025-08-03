@@ -27,7 +27,7 @@ function App() {
           <Route
             path="/"
             element={
-              <main className="mt-3">
+              <main>
                 <Home location={locationSearch} found={found} />
               </main>
             }
@@ -35,7 +35,7 @@ function App() {
           <Route
             path="/previsioni/:nameLocation"
             element={
-              <main className="mt-3">
+              <main>
                 <Previsioni />
               </main>
             }
