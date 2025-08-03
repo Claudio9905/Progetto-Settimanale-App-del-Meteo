@@ -51,7 +51,7 @@ const Previsioni = () => {
             </section>
           </Col>
         </Row>
-        <Row className=" overflow-y-scroll" id="row-card">
+        <Row id="row-card">
           {detailsLocation.list.map((day) => {
             return (
               <Col
