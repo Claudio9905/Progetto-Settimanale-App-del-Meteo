@@ -59,6 +59,9 @@ const LocationWeather = (props) => {
         </section>
         <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center">
           <div className="box-meteo text-center me-3">
+            <p className="fs-1">
+              <i class="bi bi-geo-alt"></i>
+            </p>
             <h4 className="title-meteo">Coordinate:</h4>
             <p className="fs-5">
               Lon: {locationCountry.coord.lon}
@@ -67,6 +70,9 @@ const LocationWeather = (props) => {
             </p>
           </div>
           <div className="box-meteo text-center">
+            <p className="fs-1">
+              <i class="bi bi-thermometer-sun"></i>
+            </p>
             <h4 className="title-meteo">Temperature:</h4>
             <p className="fs-5 mt-3 ">Temp: {locationCountry.main.temp} °C</p>
             <div className="fs-5 border-top border-1 border-dark">
@@ -78,10 +84,16 @@ const LocationWeather = (props) => {
             </div>
           </div>
           <div className="box-meteo text-center">
+            <p className="fs-1">
+              <i class="bi bi-moisture"></i>
+            </p>
             <h4 className="title-meteo">Humidity: </h4>
             <p className="fs-3">{locationCountry.main.humidity} %</p>
           </div>
           <div className="box-meteo text-center">
+            <p className="fs-1">
+              <i class="bi bi-cloud-sun-fill"></i>
+            </p>
             <h4 className="title-meteo">Condizioni Meteo:</h4>
             <p className="fs-5">
               {locationCountry.weather.map((desc) => {
