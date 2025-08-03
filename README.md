@@ -11,5 +11,5 @@ UPDATE 1:
 - Migliorata l'UI della home, come varie animazioni ai bottoni, colori ai background del main e dell'header.
 
 UPDATE 2:
-- Aggiunta l'nterfaccia (ancora in fase di lavoro) quando si cliccherà su "Mostra Previsioni". Verranno mostrati i dati metereologici del giorno corrente fino ai prossimi giorni ogni tre ore della giornata.
+- Aggiunta l'interfaccia (ancora in fase di lavoro) quando si cliccherà su "Mostra Previsioni". Verranno mostrati i dati metereologici del giorno corrente fino ai prossimi giorni ogni tre ore della giornata.
 - Cmabiato il CSS della NavBar, ora rimarrà fissa mentre si scorre la pagina.
