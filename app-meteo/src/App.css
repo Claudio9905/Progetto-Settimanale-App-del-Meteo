@@ -57,6 +57,7 @@ header .nav-meteo {
   width: 100%;
   z-index: 5;
   top: 0;
+  backdrop-filter: blur(3px);
 }
 
 header #link-logo {

@@ -13,14 +13,21 @@ function App() {
 
   const searchLoc = (location) => {
     setLocationSearch(location);
-    setFound(true);
+  };
+
+  const foundLoc = (found) => {
+    setFound(found);
   };
 
   return (
     <>
       <BrowserRouter>
         <header>
-          <NavbarUser location={locationSearch} search={searchLoc} />
+          <NavbarUser
+            location={locationSearch}
+            search={searchLoc}
+            foundLoc={foundLoc}
+          />
         </header>
 
         <Routes>

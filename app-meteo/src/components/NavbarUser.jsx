@@ -57,7 +57,13 @@ const NavbarUser = (props) => {
                   type="search"
                   placeholder="Inserisci la città"
                   value={props.location}
-                  onChange={(e) => props.search(e.target.value)}
+                  onChange={(e) => {
+                    props.search(e.target.value);
+                    props.foundLoc(true);
+                    if (props.location === "") {
+                      props.foundLoc(false);
+                    }
+                  }}
                 />
               </Form.Group>
             </div>

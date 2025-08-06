@@ -19,14 +19,18 @@ const Home = (props) => {
     <>
       <Container>
         <Row className=" mt-3 g-4 p-3">
-          {props.found && (
+          {props.found ? (
             <>
               <div id="meteo-search">
                 <LocationWeather endpoint={endpointSearch} />
               </div>
-              <div className="border-bottom border-2 border-dark"></div>
             </>
+          ) : (
+            <div className="d-flex justify-content-center align-items-center mt-5">
+              <h4>Nessuna Città cercata</h4>
+            </div>
           )}
+          <div className="border-bottom border-2 border-dark"></div>
           <LocationWeather endpoint={endpoint1} />
           <LocationWeather endpoint={endpoint2} />
           <LocationWeather endpoint={endpoint3} />
